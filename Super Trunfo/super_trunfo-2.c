@@ -1,10 +1,8 @@
 /*
-Arquivo para tarefa Super Trunfo do curso de GTI - Estácio
+Arquivo para tarefa Super Trunfo Aula 2 do curso de GTI - Estácio
 Aluno: Áquila Mendes
 Polo: Teresópolis - RJ
-v1.0 (04/01/2026) - Nível Novato
-v2.0 (09/01/2026) - Nível Aventureiro
-v3.0 (11/01/2026) - Nível Mestre
+v1.0 (14/01/2026) - Nível Novato
 */
 #include <stdio.h>
 int main(){
@@ -105,28 +103,15 @@ int main(){
     printf("PIB per Capita: R$ %f\n", pibpercapita_2);
     printf("Super Poder: %f\n", superpoder_2);
 
-    // --- IMPRESSÃO E COMPARAÇÃO ---
-    printf("\n--- RESULTADO DA COMPARAÇÃO (1 para Vencedora, 0 para Perdedora) ---\n");
-    printf("\nAtributo: Carta 1 vs Carta 2\n");
-      
-    // Comparações para a Carta 1 (1 se vencer, 0 se perder)
-    printf("População: %d\n", populacao_1 > populacao_2);
-    printf("Área: %d\n", area_1 > area_2);
-    printf("PIB: %d\n", pib_1 > pib_2);
-    printf("Pontos Turísticos: %d\n", pontosturistico_1 > pontosturistico_2);
-    printf("Densidade Populacional: %d\n", densidadepopulacional_1 < densidadepopulacional_2);
-    printf("PIB per Capita: %d\n", pibpercapita_1 > pibpercapita_2);
-    printf("Super Poder: %d\n", superpoder_1 > superpoder_2);
-
-    //Comparações para a Carta 2 (1 se vencer, 0 se perder)
-    printf("\nAtributo: Carta 2 vs Carta 1\n");
-    printf("População: %d\n", populacao_2 > populacao_1);
-    printf("Área: %d\n", area_2 > area_1);
-    printf("PIB: %d\n", pib_2 > pib_1);
-    printf("Pontos Turísticos: %d\n", pontosturistico_2 > pontosturistico_1);
-    printf("Densidade Populacional: %d\n", densidadepopulacional_2 < densidadepopulacional_1);
-    printf("PIB per Capita: %d\n", pibpercapita_2 > pibpercapita_1);
-    printf("Super Poder: %d\n", superpoder_2 > superpoder_1);
+    //Comparação de um atributo para definir o vencedor
+    printf("\n--- RESULTADO DA PARTIDA ---\n");
+    if (populacao_1 > populacao_2){
+        printf("A carta 1 venceu a carta 2 pelo atributo População!\n");
+    } else if (populacao_2 > populacao_1){
+        printf("A carta 2 venceu a carta 1 pelo atributo População!\n");
+    } else {
+        printf("Empate no atributo População entre as cartas 1 e 2!\n");
+    }
 
     return 0;
 }
