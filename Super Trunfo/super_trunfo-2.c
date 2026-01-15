@@ -48,13 +48,13 @@ int main(){
     //Captura dos dados da carta 2 por meio da função scanf
     printf("\n--- DIGITE OS DADOS DA CARTA 2 ---\n");
     printf("\nDigite um estado brasileiro (somente siglas, RJ, SP, MG etc): ");
-    scanf("%s", &estado_2);
+    scanf("%s", estado_2);
 
     printf("\nDigite o código da carta (ex: estado RJ coloque R01): ");
-    scanf("%s", &codigo_2);
+    scanf("%s", codigo_2);
 
     printf("\nDigite o nome da cidade do estado que escolheu: ");
-    scanf("%s", &cidade_2);
+    scanf("%s", cidade_2);
 
     printf("\nDigite o tamanho da população da cidade que escolheu: ");
     scanf("%lu", &populacao_2);
@@ -83,7 +83,7 @@ int main(){
     printf("Estado: %s\n ", estado_1);
     printf("Código: %s\n ", codigo_1);
     printf("Nome da Cidade: %s\n ", cidade_1);
-    printf("População: %d habitantes\n ", populacao_1);
+    printf("População: %lu habitantes\n ", populacao_1);
     printf("Área: %f km²\n ", area_1);
     printf("PIB: R$ %f\n ", pib_1);
     printf("Número de Pontos Turísticos: %d pontos\n", pontosturistico_1);
@@ -96,7 +96,7 @@ int main(){
     printf("Estado: %s\n ", estado_2);
     printf("Código: %s\n ", codigo_2);
     printf("Nome da Cidade: %s\n ", cidade_2);
-    printf("População: %d habitantes\n ", populacao_2);
+    printf("População: %lu habitantes\n ", populacao_2);
     printf("Área: %f km²\n ", area_2);
     printf("PIB: R$ %f\n ", pib_2);
     printf("Número de Pontos Turísticos: %d pontos\n", pontosturistico_2);
